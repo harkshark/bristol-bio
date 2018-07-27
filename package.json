@@ -4,7 +4,7 @@
   "description": "Everything you need for Biology 1 with Ms. Bristol!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "http-server"
   },
   "keywords": [
     "science",
@@ -12,5 +12,11 @@
     "education"
   ],
   "author": "Lauren Rodriguez",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "html-partials-compiler": "^1.0.7"
+  }
 }
