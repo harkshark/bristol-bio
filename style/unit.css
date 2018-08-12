@@ -1,0 +1,89 @@
+.banner {
+  box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.3);
+  height: 300px;
+  position: relative;
+  width: 100%;
+}
+
+.banner .hero {
+  background-image: url('../media/beach.jpg');
+  background-position: center;
+  height: 100%;
+}
+
+.banner .title {
+  background-color: white;
+  border-radius: 4px;
+  padding: 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.calendars {
+  margin-bottom: 0;
+}
+
+.calendars li {
+  align-items: center;
+  display: flex;
+}
+
+.calendars li > img {
+  height: 20px;
+  margin-right: 10px;
+  width: 20px;
+}
+
+.calendars li > a {
+  color: black;
+  letter-spacing: 1px;
+  padding-bottom: 0;
+}
+
+.calendars li > a:hover {
+  border-bottom: 1px solid magenta;
+}
+
+.video-notes {
+  background-color: #F8F8F8;
+  padding: 30px;
+}
+
+.other {
+  display: flex;
+}
+
+.other h2 {
+  margin-bottom: 30px;
+}
+
+.other h3 {
+  margin-top: 0;
+}
+
+.other > div {
+  background-color: rgb(80, 181, 222); /* #157145, #63D471, #067FD6 */
+  color: white;
+  padding: 30px;
+  margin: 30px;
+  width: 50%;
+}
+
+.handouts {
+  display: flex;
+  margin-right: 0 !important;
+}
+
+.handouts > div {
+  width: 50%;
+}
+
+.resources {
+  display: flex;
+}
+
+.resources > div {
+  width: 50%;
+}

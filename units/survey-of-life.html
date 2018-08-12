@@ -7,12 +7,15 @@
   <title>Bristol Biology 1</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
   <link href="/style/normalize.css" rel="stylesheet" />
+  <link href="/style/sidebar.css" rel="stylesheet" />
   <link href="/style/app.css" rel="stylesheet" />
+  <link href="/style/unit.css" rel="stylesheet" />
 </head>
 
 <body>
 <div id="app">
-  <aside>
+
+  <aside class="sidebar">
     <div class="logo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="256" y1="514" x2="256" y2="2" gradientTransform="matrix(1 0 0 -1 0 514)">
@@ -23,8 +26,8 @@
       </svg>
     </div>
 
-    <nav class="menu">
-      <ul>
+    <nav>
+      <ul class="main-menu">
         <li><a href="/index.html">Welcome</a></li>
         <li>
           <a href="#">Biology Units</a>
@@ -46,14 +49,22 @@
     </nav>
   </aside>
 
+
   <main class="unit">
+
     <div class="banner">
       <div class="hero"></div>
       <div class="title">
         <h1>Survey of Life</h1>
-        <ul class="no-bullet">
-            <li>Calendar One</li>
-            <li>Calendar Two</li>
+        <ul class="no-bullet calendars">
+            <li>
+              <img src="/media/icon-calendar.svg" />
+              <a href="#">Calendar One</a>
+            </li>
+            <li>
+              <img src="/media/icon-calendar.svg" />
+              <a href="#">Calendar Two</a>
+            </li>
         </ul>
       </div>
     </div>
@@ -71,7 +82,10 @@
       </div>
     </section>
 
+
+
     <section class="other">
+
 
 
       <div class="handouts">
@@ -106,6 +120,8 @@
           </ol>
         </div>
       </div>
+
+
 
 
       <div>
