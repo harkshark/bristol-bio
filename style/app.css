@@ -3,17 +3,12 @@
   display: flex;
 }
 
-#app > main.home {
-  height: 100%;
-  padding: 30px;
-}
-
 p {
   line-height: 1.5;
 }
 
 a {
-  color: white; /* rgb(80, 181, 222) */
+  color: white;
   text-decoration: none;
   padding-bottom: 2px;
 }
@@ -21,12 +16,6 @@ a {
 a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   color: rgba(255, 255, 255, 0.8);
-}
-
-main.unit {
-  width: 100%;
-  position: relative;
-  height: 100%;
 }
 
 .hero {
@@ -54,24 +43,25 @@ main.unit {
 }
 
 .tile .image {
-  border: 1px solid lime;
   height: 150px;
   width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile img {
+  height: 125px;
+  width: 125px;
 }
 
 .tile .title {
-  border: 1px solid blue;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .tile:hover {
   box-shadow: 0 0 1rem rgb(80, 181, 222);
   transform: scale(1.05);
-}
-
-.tile img {
-  display: block;
-  margin: 0 auto;
-  width: 100px;
 }
 
 .tile p {

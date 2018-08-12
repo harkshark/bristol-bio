@@ -1,0 +1,13 @@
+main {
+  height: 100%;
+  /*padding: 30px;*/
+}
+
+main .hero {
+  padding: 30px;
+}
+
+.student-resources {
+  background-color: #F8F8F8;
+  padding: 30px;
+}

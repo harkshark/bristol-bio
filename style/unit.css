@@ -1,3 +1,9 @@
+.unit {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
 .banner {
   box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.3);
   height: 300px;
@@ -64,7 +70,7 @@
 }
 
 .other > div {
-  background-color: rgb(80, 181, 222); /* #157145, #63D471, #067FD6 */
+  background-color: #50B5DE;
   color: white;
   padding: 30px;
   margin: 30px;

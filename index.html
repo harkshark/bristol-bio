@@ -4,15 +4,17 @@
   <meta charset="utf-8">
   <meta name="description" content="Everything you need for Biology 1 with Ms. Bristol!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bristol Biology 1</title>
+  <title>Bristol Biology</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
   <link href="/style/normalize.css" rel="stylesheet" />
+  <link href="/style/sidebar.css" rel="stylesheet" />
   <link href="/style/app.css" rel="stylesheet" />
+  <link href="/style/index.css" rel="stylesheet" />
 </head>
 
 <body>
 <div id="app">
-  <aside>
+  <aside class="sidebar">
     <div class="logo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="256" y1="514" x2="256" y2="2" gradientTransform="matrix(1 0 0 -1 0 514)">
@@ -22,105 +24,98 @@
         <path d="M366.885 213.55c23.174-22.623 37.588-54.183 37.588-89.05 0-68.649-55.851-124.5-124.5-124.5H30.5v40h59.973v432H30.5v40H330c83.537 0 151.5-67.963 151.5-151.5 0-70.818-48.846-130.436-114.615-146.95zM279.973 40c46.593 0 84.5 37.906 84.5 84.5s-37.907 84.5-84.5 84.5h-149.5V40h149.5zM330 472H130.473V249H330c61.481 0 111.5 50.019 111.5 111.5S391.481 472 330 472z" fill="url(#a)"/>
       </svg>
     </div>
-
-    <nav class="menu">
-      <ul>
+    <nav>
+      <ul class="main-menu">
         <li><a href="/index.html">Welcome</a></li>
         <li>
-          <a href="#">Biology Units</a>
+          <span>Biology Units</span>
           <ul class="sub-menu">
             <li><a href="/units/survey-of-life.html">Survey of Life</a></li>
-            <li><a href="#">Taxonomy</a></li>
-            <li><a href="#">Biochemistry</a></li>
-            <li><a href="#">Cellular Biology</a></li>
-            <li><a href="#">Energy</a></li>
-            <li><a href="#">Plasma Membrane</a></li>
-            <li><a href="#">DNA and Mitosis</a></li>
-            <li><a href="#">Genetics and Meiosis</a></li>
-            <li><a href="#">Evolution</a></li>
-            <li><a href="#">Ecology</a></li>
+            <li><a href="/units/taxonomy.html" class="inactive">Taxonomy</a></li>
+            <li><a href="/units/biochemistry.html" class="inactive">Biochemistry</a></li>
+            <li><a href="/units/cellular-biology.html" class="inactive">Cellular Biology</a></li>
+            <li><a href="/units/energy.html" class="inactive">Energy</a></li>
+            <li><a href="/units/plasma-membrane.html" class="inactive">Plasma Membrane</a></li>
+            <li><a href="/units/dna-and-mitosis.html" class="inactive">DNA and Mitosis</a></li>
+            <li><a href="/units/genetics-and-meiosis.html" class="inactive">Genetics and Meiosis</a></li>
+            <li><a href="/units/evolution.html" class="inactive">Evolution</a></li>
+            <li><a href="/units/ecology.html" class="inactive">Ecology</a></li>
           </ul>
         </li>
-        <li><a href="#">Email Ms. Bristol</a></li>
+        <li><a href="mailto:cjbristol@fcps.edu?subject=Question">Email Ms. Bristol</a></li>
       </ul>
     </nav>
   </aside>
 
-  <main class="home">
+  <main>
     <div class="hero">
       <div class="copy">
         <h1>Welcome to Biology 1</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <img src="media/biology.jpg" />
+      <img src="/media/teacher.jpg" />
     </div>
-    <h1>Student Resources</h1>
-    <div class="grid">
-      <div class="tile">
-        <div class="image">
-          <img src="media/bulldog.png" />
+    <div class="student-resources">
+      <h1>Student Resources</h1>
+      <div class="grid">
+        <div class="tile" onclick="window.open('https://westfieldhs.fcps.edu', '_blank');">
+          <div class="image">
+            <img src="/media/bulldog.png" />
+          </div>
+          <div class="title">
+            <p>Westfield High</p>
+          </div>
         </div>
-        <div class="title">
-          <p>Westfield High</p>
+        <div class="tile" onclick="window.open('https://fcps.blackboard.com', '_blank');">
+          <div class="image">
+            <img src="/media/blackboard.png" />
+          </div>
+          <div class="title">
+            <p>Blackboard</p>
+          </div>
         </div>
-      </div>
-
-      <div class="tile">
-        <div class="image">
-          <img src="media/blackboard.png" />
+        <div class="tile" onclick="window.open('https://classroom.google.com', '_blank');">
+          <div class="image">
+            <img src="/media/classroom.png" />
+          </div>
+          <div class="title">
+            <p>Google Classroom</p>
+          </div>
         </div>
-        <div class="title">
-          <p>Blackboard</p>
+        <div class="tile" onclick="window.open('https://www.google.com', '_blank');">
+          <div class="image">
+            <img src="/media/drive.png" />
+          </div>
+          <div class="title">
+            <p>Google Drive</p>
+          </div>
         </div>
-      </div>
-
-      <div class="tile">
-        <div class="image">
-          <img src="media/classroom.png" />
+        <div class="tile" onclick="window.open('https://www.instagram.com/westfield_science', '_blank');">
+          <div class="image">
+            <img src="/media/instagram.png" />
+          </div>
+          <div class="title">
+            <p>Instagram</p>
+          </div>
         </div>
-        <div class="title">
-          <p>Google Classroom</p>
+        <div class="tile" onclick="window.open('https://docs.google.com/a/fcpsschools.net/presentation/d/15g4brEWUDcWsBgGtBAPTzLzWd1y0GAh0B3ZoL5MKtwg/edit?usp=sharing', '_blank');">
+          <div class="image">
+            <img src="/media/books.png" />
+          </div>
+          <div class="title">
+            <p>Supplies</p>
+          </div>
         </div>
-      </div>
-
-      <div class="tile">
-        <div class="image">
-          <img src="media/drive.png" />
-        </div>
-        <div class="title">
-          <p>Google Drive</p>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="image">
-          <img src="media/instagram.png" />
-        </div>
-        <div class="title">
-          <p>Instagram</p>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="image">
-          <img src="media/binder.jpg" />
-        </div>
-        <div class="title">
-          <p>Supplies</p>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="image">
-          <img src="media/safety.png" />
-        </div>
-        <div class="title">
-          <p>Science Safety</p>
+        <div class="tile" onclick="window.open('/safety.html', '_self');">
+          <div class="image">
+            <img src="/media/safety.png" />
+          </div>
+          <div class="title">
+            <p>Science Safety</p>
+          </div>
         </div>
       </div>
-
     </div>
-    <!--TODO <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
   </main>
 </div>
 
