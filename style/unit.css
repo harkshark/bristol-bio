@@ -12,10 +12,14 @@
 }
 
 .banner .hero {
-  background-image: url('../media/beach.jpg');
+  background-size: cover;
   background-position: center;
   height: 100%;
 }
+
+/* from TEMPLATE.html line 55 */
+.hero.beach { background-image: url('../media/beach.jpg'); }
+.hero.mountain { background-image: url('../media/mountain.jpg'); }
 
 .banner .title {
   background-color: white;
