@@ -51,3 +51,14 @@
   margin-bottom: 10px;
   text-transform: none;
 }
+
+
+.sidebar2 {
+  background-color: rgba(85, 187, 85, 0.1);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  flex-grow: 0;
+  height: 100%;
+  min-width: 200px;
+  padding: 30px 20px;
+  z-index: 10;
+}
