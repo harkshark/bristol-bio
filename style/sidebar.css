@@ -9,6 +9,10 @@
   z-index: 10;
 }
 
+.green .sidebar {
+  background-color: rgba(85, 187, 85, 0.2);
+}
+
 .sidebar a,
 .sidebar span {
   color: black;

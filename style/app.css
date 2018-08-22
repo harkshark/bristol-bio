@@ -66,6 +66,10 @@ a:hover {
   transform: scale(1.05);
 }
 
+.green .tile:hover {
+  box-shadow: 0 0 1rem rgba(85, 187, 85);
+}
+
 .tile p {
   text-align: center;
 }

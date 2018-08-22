@@ -81,6 +81,10 @@
   width: 50%;
 }
 
+.green .other > div {
+  background-color: #55BB55;
+}
+
 .handouts {
   display: flex;
   margin-right: 0 !important;
