@@ -66,6 +66,12 @@
   display: flex;
 }
 
+@media (max-width: 1000px) {
+  .other {
+    display: block;
+  }
+}
+
 .other h2 {
   margin-bottom: 30px;
 }
@@ -78,6 +84,7 @@
   background-color: #50B5DE;
   color: white;
   padding: 30px;
+  padding-right: 5px;
   margin: 30px;
   width: 50%;
 }
