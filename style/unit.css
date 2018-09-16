@@ -20,6 +20,7 @@
 /* from TEMPLATE.html line 55 */
 .hero.beach { background-image: url('../media/beach.jpg'); }
 .hero.mountain { background-image: url('../media/mountain.jpg'); }
+.hero.hawaii { background-image: url('../media/hawaii.jpg') }
 
 .banner .title {
   background-color: white;
